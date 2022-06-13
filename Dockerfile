@@ -4,7 +4,7 @@ ADD package.json /tmp/package.json
 
 RUN rm -rf build
 
-RUN cd /tmpp && npm install -q
+RUN cd /tmp && npm install -q
 
 ADD ./ /src
 RUN rm -rf /src/node_modules && cp -a /tmp/node_modules /src/

@@ -1,12 +1,12 @@
 version: "3.7"
 services:
   node-app:
-  container_name: node-app
-  restart: unless-stopped
-  environment:
-    - NODE_ENV=production
-  build:
-    context: ./
+    container_name: node-app
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
+    build:
+      context: ./
 
   caddy:
     image: caddy/caddy:2.2.1-alpine
