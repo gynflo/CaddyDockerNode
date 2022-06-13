@@ -1,0 +1,6 @@
+gynflo.site {
+    reverse_proxy node-app:4000{
+        header_down Strict-Transport-Security max-age=31536000;
+    }
+
+}
